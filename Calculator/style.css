@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 53%);
+    flex-direction: column;
+}
+#header{
+    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem; 
+    text-align: left;
+    border: none;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px; 
+    height: 100px; 
+    padding: 20px; 
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(39, 100%, 50%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(39, 100%, 60%);
+}
+
+.operator-btn:active {
+    background-color: hsl(39, 100%, 70%);
+}
+footer{
+    margin-top: auto;
+    font-family: "Geist Mono", monospace;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: hsla(0, 0%, 94%, 0.5);
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+       scale: 0.9;
+    }
+    #Calculator {
+        width: 100%; 
+    }
+    button {
+        width: 100%; 
+        height: auto; 
+        padding: 20px; 
+        border-radius: 50%;
+    }
+
+   
+}
+
+@media screen and (max-width: 480px) {
+    #Calculator {
+        width: 100%;
+    }
+    button {
+        width: 100%; 
+        height: auto; 
+        padding: 20px; 
+        border-radius: 50%;
+    }
+
+  
+}
