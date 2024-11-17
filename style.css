@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color:hsla(240,100%,50%,0.61);
+background-image:
+radial-gradient(at 40% 20%, hsla(28,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(189,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 1% 50%, hsla(355,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 45% 42%, hsla(340,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(242,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(343,100%,0%,1) 0px, transparent 50%);
+
+}
+
+header nav ul li{
+    margin-top: 30px;
+    list-style:none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(81, 255, 255);
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav{
+    display:flex;
+    justify-content: space-around;
+}
+header nav{
+    padding: 15px 20px;
+   align-items: center;
+}
+#name{
+    color: #7c4dff;
+}
+
+#name:hover {
+    cursor:default;
+    text-shadow: 0 0 15px rgba(124, 77, 255, 0.7), 0 0 20px rgba(124, 77, 255, 0.5), 0 0 30px rgba(124, 77, 255, 0.3);
+}
+#additonalTextHtml{
+    display: none;
+    font-size: 0.9em;
+}
+#additonalTextJs{
+    display: none;
+    font-size: 0.9em;
+}
+#additonalTextPy{
+    display: none;
+    font-size: 0.9em;
+}
+#additonalTextJava{
+    display: none;
+    font-size: 0.9em;
+}
+#additonalTextCplus{
+    display: none;
+    font-size: 0.9em;
+}
+main section div{
+    text-align: center;
+    padding:30px
+}
+main section div h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+main section div p{
+    color: rgb(196, 196, 196);
+}
+#worked-in{
+    max-width: 85vw;
+    margin: auto; 
+}
+.tag h3{
+    text-align: center;
+    font-weight: 400;
+    padding: 20px;
+    color: rgb(199, 199, 199);
+    font-size: 2.5em;
+}
+#item{
+    background-color:rgba(255, 255, 255, 0.27) ;
+    backdrop-filter: blur(8px);
+    max-width: 65vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid rgba(255, 255, 255, 0.150); */
+    /* box-shadow: 2px 2px 3px  1px rgba(0, 0, 0, 0.301); */
+    transition: background-color 0.8s ease-in-out, border 0.8s ease-in-out, color 0.8s ease-in-out, transform 0.2s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+#item:hover{
+    background-color: rgba(255, 255, 255, 0.815);
+    border: 2px solid white;
+    color: rgb(43, 43, 43);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#item p{
+    color:rgb(43, 43, 43);
+    margin-top: 5px;
+}
+#item h4{
+    font-size: 2em;
+    color: rgb(43, 43, 43);
+}
+#item button{
+    margin-top: 9px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(43, 43, 43);
+    background-color: transparent;
+    border: 2px solid rgb(43, 43, 43);
+    font-weight: 700;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 20px;
+}
+
+.logo img{
+    margin-top: 100px;
+    margin-left: 8px;
+    transition: scale 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    scale:1.2;
+ }
+#education{
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 2.4em;
+    color: #00a65a;
+    margin-bottom: 10px;
+}
+.timeline-container{
+    position: relative;
+    
+}
+.timeline-date{
+    margin-left: -30px;
+    margin-top: -45px;
+    text-align: left;
+    color: white;
+}
+.timeline-item h3{
+    margin-top: -25px;
+    color: #7c4dff;
+}
+.timeline-item p{
+    font-weight: 200;
+}
+.timeline-item{
+    position: relative;
+    height: 50%;
+    border-left: 2px solid white;
+    text-align: left;
+}
+
+
+.timeline-item::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: 100%;
+    left: -10px;
+    top: 0;
+    background-color: white;
+    border: 2px solid white;
+}
+footer{
+    font-weight: 200;
+    color: rgb(199, 199, 199);
+    padding: 5px;
+    text-align: center;
+    transition: color 0.3s ease-in-out ;
+}
+footer:hover{
+    color: rgb(235, 234, 234);
+}
+@media screen and (max-width:1145px) {
+    .grid{
+        grid-template-columns: 1fr; 
+        max-width: 90vw;
+        margin: auto; 
+    }
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav img{
+        margin-bottom: 9px;
+    }
+    header nav ul {
+        text-align: center;
+    }
+    header nav ul li{
+        margin-left: 15px;
+        margin-bottom: 2px;
+    }
+    header nav ul li a:active{
+        text-decoration: none;
+        font-size: 1.2em;
+        color: rgb(81, 255, 255);
+    }
+    .tag h3{
+    font-size: 1em;
+    }
+    #worked-in {
+        max-width: 95vw; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #education{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #education h2{
+        margin-bottom: -10px;
+    }
+    .timeline-date{
+        text-align: center;
+    }
+    .timeline-item h3{
+        text-align: center;
+    }
+    .timeline-item{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .timeline-item p{
+        text-align: center;
+       
+    }
+    .timeline-item::before{
+        content: normal;
+    }
+}
+
+
+@media screen and (max-width :768px){
+    .grid{
+        grid-template-columns: 1fr; 
+        max-width: 90vw;
+        margin: auto; 
+    }
+    main section div h2{
+        font-size: 2em; 
+    }
+    #item h4{
+        font-size: 1.5em; 
+    }
+    #item button{
+        padding: 8px 16px; 
+    }
+    #worked-in {
+        max-width: 95vw; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tag h3{
+        font-size: 1em;
+        }
+        #education{
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #education h2{
+            margin-bottom: -10px;
+        }
+        .timeline-date{
+            text-align: center;
+        }
+        .timeline-item h3{
+            text-align: center;
+        }
+        .timeline-item{
+            border: none;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid white;
+            border-radius: 30px;
+            margin-bottom: 10px;
+        }
+        .timeline-item p{
+            text-align: center;
+           
+        }
+        .timeline-item::before{
+            content: normal;
+        }
+}
+

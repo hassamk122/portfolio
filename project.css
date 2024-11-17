@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color:hsla(240,100%,50%,0.61);
+background-image:
+radial-gradient(at 40% 20%, hsla(28,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(189,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 1% 50%, hsla(355,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 45% 42%, hsla(340,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(242,100%,0%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(343,100%,0%,1) 0px, transparent 50%);
+}
+
+header nav ul li{
+    margin-top: 30px;
+    list-style:none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(81, 255, 255);
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav{
+    display:flex;
+    justify-content: space-around;
+}
+header nav{
+    padding: 15px 20px;
+   align-items: center;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main h1{
+    text-align: center;
+    color: #7c4dff;
+    margin: 30px;
+    font-size: 2.5em;
+}
+#project-name{
+    color: #7c4dff;
+}
+#project-name:hover {
+    cursor:default;
+    text-shadow: 0 0 15px rgba(124, 77, 255, 0.7), 0 0 20px rgba(124, 77, 255, 0.5), 0 0 30px rgba(124, 77, 255, 0.3);
+}
+#project-item{
+    background-color: white;
+    width: 80vh;
+    height: 20vh;
+    border-radius: 20px;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 30px;
+    transition: scale 0.3s ease-in-out;
+}
+
+#project-item p{
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: left;
+}
+#project-item p b{
+    font-size: 1.2em;
+    text-align: left;
+}
+#project-item img{
+    width: 120px;
+}
+
+#project-item .visit{
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(74, 231, 74);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#project-item .visit a{
+    text-decoration: none;
+    color: white;
+    background: none;
+}
+#project-item:hover{
+    scale: 1.1;
+}
+footer{
+    font-weight: 200;
+    color: rgb(199, 199, 199);
+    padding: 5px;
+    text-align: center;
+    transition: color 0.3s ease-in-out ;
+}
+footer:hover{
+    color: rgb(235, 234, 234);
+}
+@media screen and (max-width:1145px) {
+    #project-item{
+       
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin: 10px 0;
+        gap: 10px;
+        flex-direction: column;
+    }
+    #project-item p {
+        text-align: center;
+    }
+    #project-item:hover{
+        scale: 1;
+    }
+}
+
+
+@media screen and (max-width :768px){
+    #project-item{ 
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin: 10px 0;
+        gap: 10px;
+        flex-direction: column;
+    }
+    #project-item p {
+        text-align: center;
+    }
+    
+}
+
+

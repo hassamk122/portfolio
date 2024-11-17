@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image\x-icon" href="profile-user.png">
+</head>
+<body >
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="Resume.pdf" download="Hassam Kiani-Resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section>
+        <div>
+          <h2> Hey there, <span id="name">I'm Muhammad Hassam</span></h2>
+          <p>
+            I'm a passionate software engineer, I thrive on tackling complex challenges<br> and crafting efficient, scalable solutions. 
+          </p>
+        </div>
+    </section>
+   
+    <section id="worked-in">
+        <div class="tag"><h3 >Experienced in Following Languages</h3></div>
+        <div class="grid">
+        <div id="item">
+           <h4> Html & CSS</h4>
+            <img src="htmland css-com-svg.svg" width="130px">
+            <p id="html-exp"><b>Intermediate</b><span id ="additonalTextHtml">
+                As an intermediate HTML and CSS developer, I have a strong grasp of web development fundamentals, including structuring content with HTML and styling it with CSS. I am proficient in creating responsive layouts, using Flexbox and Grid, and applying CSS animations and transitions to enhance user experience. Additionally, I am familiar with modern practices like CSS variables, media queries for responsive design, and integrating web fonts and icons to create visually appealing and accessible websites. 
+             </span></p>
+            <button onclick="extendExHtml()" id="btn-html">More</button>
+        </div>
+        <div id="item">
+            <h4> JavaScript</h4>
+             <img src="js-svgrepo-com.svg" width="120px">
+             <p id="js-exp"><b>Intermediate</b><span id ="additonalTextJs">
+               As an intermediate JavaScript developer, I have a solid understanding of core concepts such as variables, functions, and control structures, allowing me to write clean and efficient code. I'm comfortable working with advanced features like asynchronous programming using promises and async/await, as well as manipulating the DOM to create dynamic and interactive web applications.
+             </span></p>
+             <button onclick="extendExJs();" id="btn-js">More</button>
+         </div>
+         <div id="item">
+            <h4> Java</h4>
+             <img src="java-svgrepo-com.svg" width="120px">
+             <p id="java-exp"><b>Advanced</b><span id ="additonalTextJava">
+                As an advanced Java developer, I have an in-depth understanding of object-oriented programming (OOP) principles, proficiently applying them to design scalable and maintainable software solutions. I am well-versed in data structures and algorithms (DSA), allowing me to solve complex problems efficiently. Additionally, I have solid experience in file handling for managing data storage and retrieval, and I am comfortable working with Java's GUI framework, JFrame, to build interactive desktop applications. 
+             </span></p>
+             <button onclick="extendExJava()" id="btn-java">More</button>
+         </div>
+         <div id="item">
+            <h4> Python</h4>
+             <img src="python-svgrepo-com (1).svg" width="120px">
+             <p id="py-exp"><b>Beginner</b><span id ="additonalTextPy">
+                As a beginner Python developer, I have a solid understanding of fundamental programming concepts such as variables, loops, and conditionals. I am becoming proficient in writing clean and readable Python code, and I am familiar with essential data structures like lists, dictionaries, and tuples. My focus is on building my skills through small projects and learning how to use Python’s libraries to automate tasks and solve problems efficiently. 
+             </span></p>
+             <button onclick="extendExPython()" id="btn-py">More</button>
+         </div>
+         <div id="item">
+            <h4> C++</h4>
+             <img src="cpp-svgrepo-com.svg" width="120px">
+             <p id="cplus-exp"><b>Beginner</b><span id ="additonalTextCplus">
+                As a beginner C++ developer, I have a foundational understanding of basic programming concepts such as variables, loops, and control structures. I am familiar with the syntax and core principles of C++ and have started learning about object-oriented programming (OOP). My focus is on building a strong base in C++ by writing simple programs, practicing problem-solving, and gaining confidence in using the language for basic applications. 
+             </span></p>
+             <button onclick="extendExCplus()" id="btn-Cplus">More</button>
+         </div>
+        </div>
+        
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div id="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-date">2019 - 2020</div>
+                <h3>Matriculation (SSC)</h3>
+                <p>Completed Matriculation with a focus on Computer Science from the Rawalpindi Board.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2022</div>
+                <h3>Intermediate in Computer Science (HSSC)</h3>
+                <p>Earned an Intermediate in Computer Science (ICS) from Gordon College, Rawalpindi.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - Present</div>
+                <h3>Bachelor of Science in Software Engineering (BSSE)</h3>
+                <p>Currently pursuing a Bachelor's in Software Engineering at Foundation University, Rawalpindi.</p>
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+
+
+    <footer>
+        <a class="logo"><img src="github-svgrepo-com.svg" width="20px"></a>
+        <a href="https://www.linkedin.com/in/hassam-kiani-648459248/" target="_blank" class="logo"><img src="linkedin-round-svgrepo-com.svg" width="20px"></a>
+        <a class="logo"><img src="instagram-round-svgrepo-com.svg" width="20px"></a><br>
+        &#169 Made by Muhammad Hassam
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
