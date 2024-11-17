@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Geist Mono", monospace;
+    background-color: #f4f7fc;
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#heading{
+    color:#000000;
+    font-weight: 700;
+}
+#generate{
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: "Geist Mono", monospace;
+    font-weight: 400;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#generate:hover{
+    background-color: #228afa;
+}
+
+#passcode{
+    color: rgb(214, 41, 41);
+     font-size: 2rem;
+     text-align: center;
+     border: none;
+     padding: 5px;
+     background-color: #c7c7c7;
+     border-radius: 10px;
+}
+#copy{
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 5px;
+}
+#block{
+    width: 450px;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 60px 100px;
+    border-radius: 45px;
+    margin: auto;
+    box-shadow: 10px 10px 20;
+}
+#results{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#after{
+    color: #4aff25;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 768px) {
+    main{
+        display: flex;
+        width: 100%;
+    }
+    #heading{
+        font-size: 0.9rem;
+    }
+  img{
+    width: 100px;
+  }
+   #generate{
+    font-size: 0.8rem;
+   }
+   #block{
+    width: 40%;
+   }
+   #results{
+    scale: 0.5;
+    display: flex;
+    justify-content: center;
+   }
+   #copy img{
+    width: 40px
+   }
+   #after{
+    font-size: 0.8rem;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   
+    main{
+        display: flex;
+        width: 100%;
+    }
+    #heading{
+        font-size: 0.9rem;
+    }
+  img{
+    width: 100px;
+  }
+   #generate{
+    font-size: 0.8rem;
+   }
+   #block{
+    width: 40%;
+   }
+   #results{
+    scale: 0.5;
+    display: flex;
+    justify-content: center;
+   }
+   #copy img{
+    width: 40px
+   }
+   #after{
+    font-size: 0.8rem;
+   }
+  
+}
